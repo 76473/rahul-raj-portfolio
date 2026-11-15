@@ -94,7 +94,7 @@ h1{max-width:760px}
 .project h3{letter-spacing:-.035em}
 .featured-project{background:linear-gradient(180deg,#fff 0%,#fbfcff 100%)}
 .featured-project .tag{background:#eff3ff;color:#4759bc}
-.project-disclaimer{margin:18px 0 0;padding:14px 17px;border-left:3px solid #d7fb72;background:#f4f7e9;border-radius:0 12px 12px 0;color:#596273;font-size:.86rem}
+
 .edu-card{border-radius:22px;box-shadow:0 8px 26px rgba(24,35,55,.045)}
 .skill-card,.value-card{border-radius:20px}
 .contact{border-radius:28px}
@@ -103,6 +103,173 @@ h1{max-width:760px}
 @media(max-width:850px){.hero-inner{min-height:0;padding:66px 0 72px}.section{padding-top:66px;padding-bottom:66px}}
 @media(max-width:620px){.wrap{width:min(100% - 30px,1160px)}.hero{border-radius:0 0 28px 28px}.hero-inner{padding:52px 0 58px}.section{padding-top:54px;padding-bottom:54px}.project{padding:21px;border-radius:18px}.navlinks{gap:13px;overflow-x:auto;max-width:70vw;white-space:nowrap}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+
+
+/* ===== MIDNIGHT EXECUTIVE · ARCTIC TECH PREMIUM SYSTEM ===== */
+:root{
+ --navy:#07111f;--navy2:#0c1b2e;--paper:#07111f;--white:#101f33;
+ --ink:#edf4ff;--muted:#a4b4c9;--line:rgba(150,181,220,.16);
+ --lime:#55b9ff;--cyan:#55d6df;--violet:#9b9bff;
+ --shadow:0 24px 80px rgba(0,0,0,.34);
+ --glow:0 0 42px rgba(64,151,255,.13)
+}
+html{scroll-padding-top:90px;background:#07111f}
+body{
+ color:var(--ink);
+ background:
+  radial-gradient(ellipse at 14% 4%,rgba(36,105,184,.22),transparent 34rem),
+  radial-gradient(ellipse at 88% 26%,rgba(42,111,173,.14),transparent 32rem),
+  radial-gradient(ellipse at 48% 78%,rgba(27,74,129,.12),transparent 38rem),
+  linear-gradient(180deg,#07111f 0%,#091626 48%,#07111f 100%);
+ background-attachment:fixed
+}
+::selection{background:rgba(75,173,255,.35);color:#fff}
+a{color:inherit}
+.wrap{width:min(1180px,calc(100% - 48px))}
+header{
+ background:rgba(5,13,24,.78);backdrop-filter:blur(22px);
+ border-bottom:1px solid rgba(142,180,224,.13);
+ box-shadow:0 8px 30px rgba(0,0,0,.12)
+}
+.brand{color:#f4f8ff;letter-spacing:-.07em}
+.brand b,.brand span{color:#63c8ff!important}
+.navlinks{color:#9fb1c8}
+.navlinks a{transition:color .2s ease}
+.navlinks a:hover{color:#72caff}
+.hero{
+ background:
+  radial-gradient(ellipse at 82% 18%,rgba(63,151,255,.23),transparent 31rem),
+  radial-gradient(ellipse at 28% 100%,rgba(62,195,211,.12),transparent 28rem),
+  linear-gradient(128deg,#081525 0%,#0d2340 55%,#102b4a 100%);
+ border:1px solid rgba(142,190,236,.12);border-top:0;
+ border-radius:0 0 38px 38px;box-shadow:0 35px 90px rgba(0,0,0,.28)
+}
+.hero:before{background:radial-gradient(circle,rgba(73,169,255,.24),transparent 68%)}
+.hero:after{background:radial-gradient(circle,rgba(75,213,220,.13),transparent 70%)}
+.availability{border-color:rgba(85,214,223,.32);color:#8cebf0;background:rgba(50,167,191,.07)}
+.availability i{background:#67dce3;box-shadow:0 0 0 5px rgba(103,220,227,.12),0 0 18px rgba(103,220,227,.65)}
+h1 span{color:#6ccaff}
+.hero-copy{color:#c0d0e3}
+.meta-chip{background:rgba(151,190,235,.07);border-color:rgba(166,200,239,.18);color:#d8e6f7}
+.btn{border-radius:12px}
+.btn.primary{background:linear-gradient(135deg,#65c9ff,#4d9df5);color:#041322;box-shadow:0 10px 28px rgba(61,155,244,.22)}
+.btn.primary:hover{box-shadow:0 14px 36px rgba(61,155,244,.32)}
+.btn.secondary{border-color:rgba(179,210,246,.35);background:rgba(255,255,255,.045);color:#edf6ff}
+.portrait-glow{background:linear-gradient(145deg,#4caeff,#54d6dc);opacity:.72;filter:blur(1px)}
+.portrait{border:5px solid rgba(226,242,255,.18);box-shadow:0 28px 90px rgba(0,0,0,.52)}
+.portrait-caption{background:rgba(10,26,45,.88);backdrop-filter:blur(16px);color:#eaf5ff;border:1px solid rgba(160,204,246,.2);box-shadow:var(--shadow)}
+.section{border-bottom:1px solid rgba(146,181,221,.12);position:relative}
+.section-head{margin-bottom:38px}
+.eyebrow{color:#70caff}
+.section h2{color:#f0f6ff}
+.section-note{color:#9fb1c8}
+.about-copy{color:#bdcadd}
+.stat,.skill-panel,.project,.edu-card,.learning-card,.value-card{
+ background:linear-gradient(145deg,rgba(18,36,59,.94),rgba(11,25,43,.94));
+ border:1px solid rgba(145,184,228,.16);
+ color:#edf4ff;box-shadow:0 15px 45px rgba(0,0,0,.18)
+}
+.stat strong,.edu-card .score{color:#70caff}
+.stat span,.edu-card p,.project p,.learning-card p,.value-card p{color:#a8b9ce}
+.skill-panel{background:linear-gradient(145deg,rgba(18,38,64,.96),rgba(10,25,44,.96));border-color:rgba(112,177,235,.2)}
+.skill-group+.skill-group{border-top-color:rgba(145,184,228,.15)}
+.skill-group-label{color:#74d8e4}
+.skill-tags span{
+ background:rgba(135,174,218,.08);border:1px solid rgba(149,188,231,.18);
+ color:#dce9f8;box-shadow:none
+}
+.skill-tags span:hover{background:#1c4b76;border-color:#58b8fa;color:#fff}
+.skill-tags .featured{background:rgba(75,177,255,.17);border-color:rgba(93,190,255,.36);color:#9bd9ff}
+.skill-tags .featured:hover{background:#3c9ee8;color:#061625}
+.role-btn{background:rgba(138,176,219,.07)!important;border-color:rgba(145,184,228,.18)!important;color:#d6e5f6!important}
+.role-btn.active,.role-btn:hover{background:linear-gradient(135deg,#3d9fe9,#4bbcc9)!important;color:#061625!important;border-color:transparent!important}
+#role-title{color:#edf6ff}
+#role-description{color:#a8bad0}
+.projects{gap:18px}
+.project{
+ position:relative;overflow:hidden;border-radius:22px;padding:27px;
+ background:linear-gradient(145deg,rgba(19,39,64,.97),rgba(10,24,42,.97));
+ border-color:rgba(139,184,232,.17);box-shadow:0 18px 48px rgba(0,0,0,.2)
+}
+.project:before{height:2px;background:linear-gradient(90deg,#54c8e5,#4b9eff,#8b9cff);opacity:.95}
+.project:hover{transform:translateY(-6px);border-color:rgba(94,184,255,.48);box-shadow:0 25px 65px rgba(0,0,0,.32),0 0 34px rgba(55,146,225,.1)}
+.project h3{color:#f0f6ff}
+.project small{color:#91a8c2}
+.tag{background:rgba(80,165,235,.14);color:#8bd1ff;border:1px solid rgba(91,174,239,.2)}
+.featured-project{background:linear-gradient(145deg,rgba(21,48,76,.98),rgba(10,27,47,.98))}
+.featured-project .tag{background:rgba(65,173,241,.16);color:#9bdcff}
+.sim-detail{color:#b6c7db;border-top-color:rgba(143,181,222,.13)}
+.sim-detail b{color:#e5f1ff}
+.brand-mark{color:#f3f8ff}
+.brand-mark.eab{color:#8dd6ff}
+.forage-mark{color:#8fb4d7}
+.view-link{color:#79ceff;border-bottom-color:rgba(103,194,255,.38)}
+.view-link:hover{color:#b3edff}
+#education.section{
+ background:linear-gradient(180deg,rgba(13,31,52,.48),rgba(8,20,35,.18));
+ border-top:1px solid rgba(142,185,230,.1);border-bottom:1px solid rgba(142,185,230,.1)
+}
+.education-main{
+ background:
+  radial-gradient(ellipse at 90% 5%,rgba(63,157,244,.22),transparent 55%),
+  linear-gradient(125deg,#102c4a,#0b1c31 72%);
+ border:1px solid rgba(116,184,243,.24);border-radius:25px;
+ box-shadow:0 22px 60px rgba(0,0,0,.25)
+}
+.education-main p{color:#b6c9df}
+.education-main .cgpa{color:#78d5ff}
+.education-cards{gap:16px}
+.edu-card{background:linear-gradient(145deg,rgba(20,41,66,.96),rgba(12,27,46,.96));border-color:rgba(139,184,232,.17)}
+.edu-card .year{color:#78d5ff}
+.edu-card h3{color:#edf5ff}
+.privacy-note,.chart-note{color:#8fa5bf}
+.semester-chart{background:rgba(8,21,37,.55);border:1px solid rgba(145,184,228,.14);border-radius:20px;padding:22px}
+.semester .bar{background:linear-gradient(180deg,#68d8e5,#438fe9);box-shadow:0 0 20px rgba(75,173,236,.18)}
+.semester span{color:#a9bdd3}
+.learning-card{background:linear-gradient(145deg,rgba(19,39,64,.95),rgba(10,25,43,.95))}
+.learning-card h3{color:#edf5ff}
+.value-card h3{color:#edf5ff}
+.value-card .symbol{color:#72d8e5}
+.contact{
+ background:
+  radial-gradient(ellipse at 10% 0%,rgba(69,179,231,.2),transparent 50%),
+  linear-gradient(125deg,#102c4a,#0b1d32 75%);
+ border:1px solid rgba(127,188,240,.24);border-radius:28px;
+ box-shadow:0 25px 75px rgba(0,0,0,.28)
+}
+.contact h2{color:#f2f8ff}
+.contact p{color:#b7cbe0}
+.contact .eyebrow{color:#78d9e3!important}
+.contact .btn.primary{background:linear-gradient(135deg,#67d6e3,#62b8ff);color:#061626}
+.contact .btn.secondary{border-color:rgba(170,208,245,.34);color:#eaf5ff}
+.contact-icons a{background:rgba(125,181,230,.1);border:1px solid rgba(148,195,238,.2);color:#9cddff}
+.contact-icons a:hover{background:#2d83bd;color:white}
+footer{color:#7f96b2}
+footer .social a:hover{color:#83d7ff}
+section[id]{scroll-margin-top:90px}
+@media(prefers-reduced-motion:no-preference){
+ .project,.stat,.edu-card,.learning-card,.value-card,.btn{transition:transform .24s ease,box-shadow .24s ease,border-color .24s ease,background .24s ease}
+ .hero-inner{animation:heroReveal .75s ease both}
+ @keyframes heroReveal{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+}
+@media(max-width:850px){
+ .wrap{width:min(100% - 36px,1180px)}
+ .hero-inner{grid-template-columns:1fr .78fr}
+}
+@media(max-width:620px){
+ .wrap{width:calc(100% - 30px)}
+ .hero{border-radius:0 0 28px 28px}
+ .hero-inner{grid-template-columns:1fr;padding:48px 0 54px}
+ .portrait-wrap{width:min(265px,76%)}
+ .section{padding:58px 0}
+ .projects,.education-cards,.learning{grid-template-columns:1fr}
+ .project{padding:22px}
+ .education-main{grid-template-columns:1fr;padding:23px}
+ .education-main .cgpa{font-size:2.3rem}
+ .contact{padding:28px}
+ .navlinks{display:flex;gap:15px;max-width:72vw;overflow-x:auto;white-space:nowrap;font-size:.75rem}
+ .navlinks::-webkit-scrollbar{display:none}
+}
 
 </style>
 </head>
@@ -156,7 +323,7 @@ h1{max-width:760px}
 <span data-skill="Microsoft Excel">Microsoft Excel</span><span data-skill="SQL">SQL</span><span data-skill="Data Analysis">Data Analysis</span><span data-skill="DBMS">DBMS</span><span data-skill="Analytical Thinking">Analytical Thinking</span><span data-skill="Attention to Detail">Attention to Detail</span><span data-skill="Problem Solving">Problem Solving</span>
 </div></div></section>
 
-<section id="projects" class="section"><div class="section-head"><div><div class="eyebrow">05 / Practical exposure</div><h2>Learning by doing.</h2></div><p class="section-note">Three Forage job simulations and completed portfolio projects demonstrating practical skills. These are learning experiences, not paid employment.</p><div class="forage-mark" aria-label="Forage platform"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19.8 3.5C11 3.2 5.1 6.3 4 12.1c-.7 3.7 1.6 6.6 5.1 6.6 5.2 0 9.7-6.2 10.7-15.2ZM5.8 20.7c2.8-5.2 6.4-8.9 11.1-12.1-3.4 3.4-6 7.1-7.8 12.1H5.8Z"/></svg> FORAGE · VIRTUAL JOB SIMULATIONS</div></div>
+<section id="projects" class="section"><div class="section-head"><div><div class="eyebrow">04 / Practical experience</div><h2>Learning by doing.</h2></div><p class="section-note">Three Forage job simulations and completed portfolio projects demonstrating practical skills. These are learning experiences, not paid employment.</p><div class="forage-mark" aria-label="Forage platform"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19.8 3.5C11 3.2 5.1 6.3 4 12.1c-.7 3.7 1.6 6.6 5.1 6.6 5.2 0 9.7-6.2 10.7-15.2ZM5.8 20.7c2.8-5.2 6.4-8.9 11.1-12.1-3.4 3.4-6 7.1-7.8 12.1H5.8Z"/></svg> FORAGE · VIRTUAL JOB SIMULATIONS</div></div>
 <div class="projects">
 <article class="project"><div class="project-top"><div class="sim-meta"><span class="brand-mark" aria-label="Tata Group wordmark">TATA</span><span class="tag">Forage · Data analytics</span></div><b>01</b></div><h3>GenAI Powered Data Analytics Job Simulation</h3><p>Explored loan data, performed risk profiling, identified delinquency patterns and prepared a business report with a collections strategy.</p><div class="sim-detail"><b>Tasks:</b> Exploratory data analysis and risk profiling; predicting delinquency with AI; business reporting and data storytelling for collections strategy; implementing an AI-driven collections strategy.</div><div class="sim-detail"><b>Skills demonstrated:</b> Data analysis, risk profiling, analytical thinking and business reporting.</div><small>Completed October 9, 2026 · Forage</small><a class="view-link" href="assets/Forage_Tata_GenAI_Data_Analytics_Certificate.png" target="_blank" rel="noopener">View original certificate ↗</a></article>
 <article class="project"><div class="project-top"><div class="sim-meta"><span class="brand-mark" aria-label="Tata Group wordmark">TATA</span><span class="tag">Forage · Cybersecurity</span></div><b>02</b></div><h3>Cybersecurity Analyst Job Simulation</h3><p>Completed practical tasks focused on identity and access management and assessing IAM needs in a business context.</p><div class="sim-detail"><b>Tasks:</b> Identity and access management fundamentals; IAM strategy assessment; crafting custom IAM solutions; platform integration.</div><div class="sim-detail"><b>Skills demonstrated:</b> Identity and Access Management (IAM), access-risk awareness and cybersecurity fundamentals.</div><small>Completed October 8, 2026 · Forage</small><a class="view-link" href="assets/Forage_Tata_Cybersecurity_Certificate.png" target="_blank" rel="noopener">View original certificate ↗</a></article>
@@ -166,10 +333,7 @@ h1{max-width:760px}
 <article class="project featured-project"><div class="project-top"><span class="tag">Completed portfolio project · Python</span><b>06</b></div><h3>Retail Sales Data Analysis with Python</h3><p>Analyzed a practice retail dataset with pandas to calculate business KPIs, compare regional performance and review monthly trends.</p><div class="sim-detail"><b>Work included:</b> Data loading, calculated metrics, grouped summaries and monthly performance analysis.</div><div class="sim-detail"><b>Skills demonstrated:</b> Python, pandas, data analysis, aggregation and reporting.</div><small>Completed portfolio project · Synthetic practice dataset</small><a class="view-link" href="assets/projects/retail_sales_analysis.py" download>Download Python script ↗</a><a class="view-link" href="assets/projects/retail_sales_sample.csv" download>Download sample dataset ↗</a></article>
 <article class="project featured-project"><div class="project-top"><span class="tag">Completed portfolio project · SQL</span><b>07</b></div><h3>Retail Sales SQL Business Queries</h3><p>Prepared SQL queries to answer common business questions about revenue, profit, product performance and monthly sales trends.</p><div class="sim-detail"><b>Work included:</b> Aggregate calculations, GROUP BY, ORDER BY, NULLIF and date-based grouping.</div><div class="sim-detail"><b>Skills demonstrated:</b> SQL, querying, business analysis and data interpretation.</div><small>Completed portfolio project · Synthetic practice dataset</small><a class="view-link" href="assets/projects/retail_sales_analysis.sql" download>Download SQL queries ↗</a><a class="view-link" href="assets/projects/retail_sales_sample.csv" download>Download sample dataset ↗</a></article>
 </div>
-<p class="project-disclaimer">Project datasets are synthetic and created for portfolio practice. Rahul should review the files, run the analyses and be prepared to explain the approach during interviews.</p>
 </section>
-
-<section class="section"><div class="section-head"><div><div class="eyebrow">Project portfolio</div><h2>More practical work is next.</h2></div><p class="section-note">The academic portfolio website is currently the project showcased here. Additional projects will be added when completed and supported by working demos or repositories.</p></div><div class="learning"><article class="learning-card"><h3>Next project to publish: Excel / MIS dashboard</h3><p>A practical reporting project with a sample dataset, formulas, pivot tables and a clear business summary. Not yet presented as completed work.</p></article><article class="learning-card"><h3>Next project to publish: Python automation</h3><p>A small Python project with source code, example input/output and a short explanation. Not yet presented as completed work.</p></article><article class="learning-card"><h3>Next project to publish: SQL analysis</h3><p>A database querying project with business questions, SQL queries and documented findings. Not yet presented as completed work.</p></article><article class="learning-card"><h3>GitHub</h3><p>GitHub project links can be added once Rahul shares a profile or repositories. No account or repository has been invented.</p></article></div></section>
 
 <section class="section"><div class="section-head"><div><div class="eyebrow">05 / What I bring</div><h2>A strong foundation.<br>A learning mindset.</h2></div><p class="section-note">An early-career candidate focused on learning, contributing and growing through practical work.</p></div>
 <div class="value-grid">
@@ -178,7 +342,7 @@ h1{max-width:760px}
 <article class="value-card"><div class="symbol">↗</div><h3>Adaptable learner</h3><p>Open to different entry-level opportunities and motivated to learn the tools and processes required by a team.</p></article>
 </div></section>
 
-<section id="education" class="section"><div class="section-head"><div><div class="eyebrow">04 / Education</div><h2>Academic journey.</h2></div><p class="section-note">A concise academic overview. Original marksheets can be shared privately during recruitment.</p></div>
+<section id="education" class="section"><div class="section-head"><div><div class="eyebrow">05 / Education</div><h2>Academic journey.</h2></div><p class="section-note">A concise academic overview. Original marksheets can be shared privately during recruitment.</p></div>
 <div class="education-main"><div><div class="eyebrow" style="color:var(--lime)">2021 — 2024 · Undergraduate</div><h3 style="font-size:1.4rem;margin:8px 0 0">B.Sc. Information Technology (Honours)</h3><p>Dr. Shyama Prasad Mukherjee University, Ranchi<br>First Class with Distinction · 77.44% Honours percentage · 72.85% overall</p></div><div class="cgpa">8.2 <span style="font-size:1rem;color:#c4cedd">/ 10 CGPA</span></div></div>
 <div class="education-cards">
 <article class="edu-card"><div class="year">2019 · CBSE Class X</div><h3>Secondary School</h3><div class="score">90.8%</div><p>454 / 500 marks · Passed</p><span class="privacy-note">Original document available privately on request</span></article>
@@ -199,7 +363,7 @@ h1{max-width:760px}
 <div class="learning"><article class="learning-card"><h3>Microsoft Excel — Coursera</h3><p>Course learning completed in spreadsheet skills and data handling. No certificate claimed.</p></article><article class="learning-card"><h3>Languages</h3><p>English and Hindi — fluent in written and spoken communication.</p></article></div>
 </section>
 
-<section id="contact" class="section" style="border:0"><div class="contact"><div><div class="eyebrow" style="color:#46572c">05 / Get in touch</div><h2>Let's make the next step count.</h2><p>Interested in entry-level roles where I can support a team, solve practical problems and continue building my skills.</p></div><div class="actions" style="margin:0;flex-direction:column;align-items:stretch"><a class="btn primary" href="mailto:rajrahul9021@gmail.com">Send an email ↗</a><a class="btn secondary" href="tel:+918873963201">Call Rahul ↗</a><div class="contact-icons"><a href="mailto:rajrahul9021@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M3 4h18a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm9 8.2L3.5 6h17L12 12.2ZM3 8v10h18V8l-9 6.2L3 8Z"/></svg></a><a href="https://www.linkedin.com/in/rahul-raj-259ab8448" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.53v16.94c0 .85.69 1.53 1.55 1.53h16.9c.86 0 1.55-.68 1.55-1.53V3.53C22 2.68 21.31 2 20.45 2ZM8.1 18.3H5.15V9.1H8.1v9.2ZM6.63 7.84a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42ZM18.85 18.3H15.9v-4.48c0-1.07-.02-2.45-1.49-2.45-1.49 0-1.72 1.16-1.72 2.37v4.56H9.74V9.1h2.83v1.26h.04c.39-.74 1.36-1.52 2.8-1.52 3 0 3.55 1.97 3.55 4.53v4.93Z"/></svg></a><a href="https://www.instagram.com/raj.r__03/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm0 2A3.8 3.8 0 0 0 4 7.8v8.4A3.8 3.8 0 0 0 7.8 20h8.4a3.8 3.8 0 0 0 3.8-3.8V7.8A3.8 3.8 0 0 0 16.2 4H7.8Zm4.2 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.2-3.5a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Z"/></svg></a></div></div></div></section>
+<section id="contact" class="section" style="border:0"><div class="contact"><div><div class="eyebrow" style="color:#46572c">06 / Get in touch</div><h2>Let's make the next step count.</h2><p>Interested in entry-level roles where I can support a team, solve practical problems and continue building my skills.</p></div><div class="actions" style="margin:0;flex-direction:column;align-items:stretch"><a class="btn primary" href="mailto:rajrahul9021@gmail.com">Send an email ↗</a><a class="btn secondary" href="tel:+918873963201">Call Rahul ↗</a><div class="contact-icons"><a href="mailto:rajrahul9021@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M3 4h18a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm9 8.2L3.5 6h17L12 12.2ZM3 8v10h18V8l-9 6.2L3 8Z"/></svg></a><a href="https://www.linkedin.com/in/rahul-raj-259ab8448" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.53v16.94c0 .85.69 1.53 1.55 1.53h16.9c.86 0 1.55-.68 1.55-1.53V3.53C22 2.68 21.31 2 20.45 2ZM8.1 18.3H5.15V9.1H8.1v9.2ZM6.63 7.84a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42ZM18.85 18.3H15.9v-4.48c0-1.07-.02-2.45-1.49-2.45-1.49 0-1.72 1.16-1.72 2.37v4.56H9.74V9.1h2.83v1.26h.04c.39-.74 1.36-1.52 2.8-1.52 3 0 3.55 1.97 3.55 4.53v4.93Z"/></svg></a><a href="https://www.instagram.com/raj.r__03/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm0 2A3.8 3.8 0 0 0 4 7.8v8.4A3.8 3.8 0 0 0 7.8 20h8.4a3.8 3.8 0 0 0 3.8-3.8V7.8A3.8 3.8 0 0 0 16.2 4H7.8Zm4.2 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.2-3.5a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Z"/></svg></a></div></div></div></section>
 </div></main>
 <footer class="wrap"><span>© <span id="year"></span> Rahul Raj · Personal portfolio</span><div class="social"><a href="#top">Back to top ↑</a></div></footer>
 
