@@ -1,0 +1,17 @@
+Date,Region,Channel,Product,Units,Unit Price (USD),Unit Cost (USD),Revenue,Cost,Profit
+2026-01-03,North,Online,Laptop,3,850,40,2550,120,2430
+2026-01-05,South,Store,Monitor,8,180,55,1440,440,1000
+2026-01-08,East,Online,Keyboard,25,35,12,875,300,575
+2026-01-12,West,Store,Laptop,2,850,40,1700,80,1620
+2026-01-17,North,Store,Monitor,6,180,55,1080,330,750
+2026-02-02,South,Online,Laptop,4,850,40,3400,160,3240
+2026-02-06,East,Store,Keyboard,30,35,12,1050,360,690
+2026-02-11,West,Online,Monitor,9,180,55,1620,495,1125
+2026-02-19,North,Online,Keyboard,22,35,12,770,264,506
+2026-03-01,South,Store,Monitor,7,180,55,1260,385,875
+2026-03-08,East,Online,Laptop,5,850,40,4250,200,4050
+2026-03-14,West,Store,Keyboard,28,35,12,980,336,644
+2026-03-22,North,Online,Laptop,2,850,40,1700,80,1620
+2026-04-04,South,Online,Keyboard,34,35,12,1190,408,782
+2026-04-09,East,Store,Monitor,10,180,55,1800,550,1250
+2026-04-16,West,Online,Laptop,3,850,40,2550,120,2430

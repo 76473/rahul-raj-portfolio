@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Rahul Raj — B.Sc. Information Technology graduate. Entry-level opportunities in IT, analytics, software development, technical support and operations.">
+<meta name="theme-color" content="#101827">
+<title>Rahul Raj — Portfolio</title>
+<style>
+:root{--navy:#101827;--navy2:#17263a;--paper:#f6f7fb;--white:#fff;--ink:#182337;--muted:#657187;--line:#e5e9f1;--lime:#d7fb72;--cyan:#9ce8e5;--violet:#b7a6ff;--shadow:0 22px 70px rgba(24,35,55,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 42px));margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(246,247,251,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(229,233,241,.8)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:1.18rem;font-weight:900;letter-spacing:-.06em}.brand b{color:#6d7ee8}.navlinks{display:flex;gap:25px;color:#566278;font-size:.87rem;font-weight:650}.navlinks a:hover{color:#5b64d8}
+.hero{position:relative;overflow:hidden;background:linear-gradient(125deg,#101827 0%,#17263a 62%,#28345a 100%);color:white;border-radius:0 0 34px 34px}.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;filter:blur(1px);pointer-events:none}.hero:before{width:420px;height:420px;background:radial-gradient(circle,rgba(183,166,255,.25),transparent 68%);right:-90px;top:-170px}.hero:after{width:350px;height:350px;background:radial-gradient(circle,rgba(156,232,229,.16),transparent 70%);left:38%;bottom:-220px}.hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;gap:45px;align-items:center;padding:76px 0 82px}.availability{display:inline-flex;align-items:center;gap:9px;padding:8px 13px;border:1px solid rgba(215,251,114,.35);border-radius:999px;color:var(--lime);font-size:.75rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase}.availability i{width:7px;height:7px;background:var(--lime);border-radius:50%;box-shadow:0 0 0 5px rgba(215,251,114,.12)}h1{font-size:clamp(3.2rem,7vw,6.4rem);line-height:.94;letter-spacing:-.085em;margin:24px 0 22px;font-weight:900}h1 span{color:var(--lime)}.hero-copy{max-width:660px;color:#c8d1df;font-size:1.08rem;line-height:1.85}.hero-meta{display:flex;flex-wrap:wrap;gap:10px;margin:25px 0 0}.meta-chip{border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.06);padding:7px 12px;border-radius:999px;color:#e5eaf2;font-size:.78rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 19px;border-radius:999px;font-size:.88rem;font-weight:800;transition:.2s;border:1px solid transparent}.btn:hover{transform:translateY(-3px)}.btn.primary{background:var(--lime);color:#17202d}.btn.secondary{border-color:rgba(255,255,255,.38);color:white}.portrait-wrap{justify-self:center;position:relative;width:min(360px,100%);aspect-ratio:4/5}.portrait-glow{position:absolute;inset:8% -8% -5% 8%;background:linear-gradient(145deg,var(--lime),var(--violet));border-radius:46% 46% 30px 30px;transform:rotate(5deg);opacity:.9}.portrait{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 25%;border-radius:46% 46% 28px 28px;border:7px solid rgba(255,255,255,.9);box-shadow:0 25px 70px rgba(0,0,0,.35)}.portrait-caption{position:absolute;bottom:18px;left:-24px;background:white;color:var(--ink);padding:12px 16px;border-radius:14px;box-shadow:var(--shadow);font-size:.78rem;font-weight:800}
+.section{padding:82px 0;border-bottom:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:28px;margin-bottom:34px}.eyebrow{color:#6875d8;font-size:.72rem;letter-spacing:.17em;text-transform:uppercase;font-weight:900}.section h2{font-size:clamp(2rem,4vw,3.45rem);line-height:1.05;letter-spacing:-.075em;margin:9px 0 0}.section-note{max-width:410px;color:var(--muted);font-size:.9rem}.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:45px;align-items:start}.about-copy{font-size:1.1rem;color:#536076;max-width:700px}.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.stat{background:white;border:1px solid var(--line);border-radius:18px;padding:19px;box-shadow:0 7px 24px rgba(24,35,55,.04)}.stat strong{display:block;font-size:1.75rem;letter-spacing:-.06em;color:#5966d6}.stat span{font-size:.77rem;color:var(--muted)}
+.skill-panel{background:linear-gradient(135deg,#fff,#f0f2ff);border:1px solid #e4e7f8;border-radius:27px;padding:28px;box-shadow:var(--shadow)}.skill-group+.skill-group{margin-top:27px;padding-top:24px;border-top:1px solid #e1e5f0}.skill-group-label{font-size:.76rem;text-transform:uppercase;letter-spacing:.14em;font-weight:900;color:#626ed0;margin-bottom:15px}.skill-tags{display:flex;flex-wrap:wrap;gap:10px}.skill-tags span{display:inline-flex;align-items:center;padding:10px 14px;border-radius:999px;background:#fff;border:1px solid #dfe4f1;color:#27344b;font-size:.84rem;font-weight:750;box-shadow:0 5px 15px rgba(34,46,75,.05);transition:.2s}.skill-tags span:hover{background:var(--navy);border-color:var(--navy);color:white;transform:translateY(-3px)}.skill-tags .featured{background:#e8f8b8;border-color:#d6ef8d;color:#34491a}.skill-tags .featured:hover{background:#d7fb72;color:#17202d}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.project{background:white;border:1px solid var(--line);border-radius:22px;padding:25px;min-height:225px;display:flex;flex-direction:column;box-shadow:0 8px 26px rgba(24,35,55,.04);transition:.2s}.project:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.project-top{display:flex;justify-content:space-between;align-items:center}.tag{font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;font-weight:900;padding:6px 10px;border-radius:999px;background:#eef0ff;color:#5966d6}.project h3{font-size:1.32rem;letter-spacing:-.05em;margin:18px 0 8px}.project p{margin:0;color:var(--muted);font-size:.9rem}.project small{margin-top:auto;padding-top:18px;color:#8791a1;font-size:.76rem}
+.education-main{background:var(--navy);color:white;border-radius:25px;padding:28px;display:grid;grid-template-columns:1fr auto;gap:22px;align-items:center}.education-main p{color:#c4cedd;margin:8px 0 0;font-size:.9rem}.education-main .cgpa{font-size:2.7rem;color:var(--lime);font-weight:900;letter-spacing:-.08em;white-space:nowrap}.education-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:15px}.edu-card{background:white;border:1px solid var(--line);border-radius:19px;padding:21px;box-shadow:0 8px 26px rgba(24,35,55,.04)}.edu-card .year{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:#6975d7;font-weight:900}.edu-card h3{font-size:1.08rem;margin:8px 0 4px;letter-spacing:-.04em}.edu-card .score{font-size:1.65rem;font-weight:900;letter-spacing:-.06em;color:#5966d6}.edu-card p{font-size:.8rem;color:var(--muted);margin:0 0 15px}.view-link{display:inline-flex;gap:7px;align-items:center;font-size:.8rem;font-weight:850;color:#5966d6;border-bottom:1px solid #c9cef4;padding-bottom:3px}.view-link:hover{color:#29358d}
+.learning{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:15px}.learning-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px}.learning-card h3{margin:0 0 5px;font-size:1rem}.learning-card p{margin:0;color:var(--muted);font-size:.84rem}
+.contact{background:linear-gradient(120deg,#d7fb72,#a9eee5);border-radius:28px;padding:42px;display:grid;grid-template-columns:1fr auto;gap:25px;align-items:center}.contact h2{font-size:clamp(2rem,4vw,3.3rem);letter-spacing:-.075em;line-height:1.04;margin:8px 0}.contact p{color:#43512d;max-width:520px}.contact .btn.primary{background:var(--navy);color:white}.contact .btn.secondary{border-color:#53634a;color:#25321d}
+footer{padding:30px 0 40px;display:flex;justify-content:space-between;gap:20px;color:#818b9b;font-size:.8rem}.social{display:flex;gap:18px}
+@media(max-width:850px){.hero-inner{grid-template-columns:1fr .75fr;gap:22px}.about-grid{grid-template-columns:1fr}.education-cards{grid-template-columns:1fr 1fr}.section-head{display:block}.section-note{margin-top:12px}.navlinks{gap:13px;font-size:.78rem}}
+@media(max-width:620px){.wrap{width:calc(100% - 30px)}.nav{height:65px}.navlinks{display:none}.hero-inner{grid-template-columns:1fr;padding:54px 0 60px}.portrait-wrap{width:min(280px,78%);margin:12px auto 0;grid-row:1}.hero-copy{font-size:1rem}.section{padding:58px 0}.projects,.education-cards,.learning{grid-template-columns:1fr}.education-main{grid-template-columns:1fr}.education-main .cgpa{font-size:2.2rem}.contact{grid-template-columns:1fr;padding:28px}.contact .actions{align-items:stretch!important}footer{display:block}.social{margin-top:12px}.skill-panel{padding:19px}.skill-tags span{font-size:.78rem;padding:9px 11px}}
+
+.role-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.role-btn{border:1px solid var(--line);background:#fff;border-radius:16px;padding:16px;text-align:left;color:var(--ink);font:inherit;cursor:pointer;transition:.2s;min-height:92px}
+.role-btn strong{display:block;font-size:.9rem}.role-btn small{display:block;color:var(--muted);margin-top:5px;font-size:.72rem}
+.role-btn:hover,.role-btn.active{background:var(--navy);color:#fff;border-color:var(--navy);transform:translateY(-2px)}.role-btn.active small{color:#d1d9e6}
+.role-output{margin-top:16px;padding:22px;border-radius:20px;background:#eef0ff;border:1px solid #dfe3ff}
+.role-output h3{margin:0 0 8px;font-size:1.05rem}.role-output p{margin:0 0 13px;color:#5d6880;font-size:.85rem}
+.skill-tags span.dimmed{opacity:.25;filter:grayscale(1)}
+.value-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.value-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:0 8px 26px rgba(24,35,55,.04)}
+.value-card .symbol{font-size:1.5rem}.value-card h3{margin:12px 0 5px;font-size:1.05rem}.value-card p{margin:0;color:var(--muted);font-size:.85rem}
+.semester-chart{display:grid;grid-template-columns:repeat(6,1fr);align-items:end;gap:12px;height:220px;padding:22px 18px 12px;background:#fff;border:1px solid var(--line);border-radius:22px}
+.semester{height:100%;display:flex;flex-direction:column;justify-content:end;align-items:center;gap:8px}
+.semester .bar{width:min(42px,75%);height:var(--h);min-height:8px;border-radius:10px 10px 4px 4px;background:linear-gradient(180deg,#d7fb72,#8ecb9c);position:relative}
+.semester .bar:after{content:attr(data-score);position:absolute;top:-25px;left:50%;transform:translateX(-50%);font-size:.75rem;font-weight:900;color:#4b5a35;white-space:nowrap}
+.semester span{font-size:.72rem;color:var(--muted);font-weight:750}.chart-note{font-size:.78rem;color:var(--muted);margin:10px 2px 0}
+.brand-mark{display:inline-flex;align-items:center;justify-content:center;min-width:58px;height:35px;padding:0 10px;border-radius:10px;background:var(--navy);color:#fff;font-size:.76rem;font-weight:950;letter-spacing:.04em}
+.sim-meta{display:flex;align-items:center;gap:10px;margin-bottom:5px}.sim-detail{margin-top:13px;padding-top:13px;border-top:1px solid var(--line);font-size:.82rem;color:#566278}.sim-detail b{color:var(--ink)}
+.value-grid{grid-template-columns:repeat(3,1fr)}
+@media(max-width:850px){.role-grid{grid-template-columns:repeat(2,1fr)}.value-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.role-grid{grid-template-columns:1fr 1fr}.value-grid{grid-template-columns:1fr}.semester-chart{gap:5px;padding:20px 8px 10px}.semester .bar{width:65%}.semester span{font-size:.62rem}}
+
+
+/* Company wordmarks and social icon buttons */
+.sim-meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.brand-mark{display:inline-flex;align-items:center;justify-content:center;min-width:54px;height:36px;padding:0 10px;border-radius:9px;background:#f4f7fb;border:1px solid #e2e8f0;color:#315b9b;font-weight:950;font-size:.9rem;letter-spacing:-.06em}.brand-mark.eab{color:#2462a5;letter-spacing:.02em;font-size:1rem}.forage-mark{display:inline-flex;align-items:center;gap:5px;color:#2c8a58;font-weight:850;font-size:.74rem}.forage-mark svg{width:17px;height:17px;display:block}.social-icons{display:flex;gap:10px;align-items:center;margin-top:16px}.social-icon{width:42px;height:42px;display:inline-flex;align-items:center;justify-content:center;border-radius:13px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.18);color:#fff;transition:.2s}.social-icon:hover{transform:translateY(-3px);background:rgba(215,251,114,.16);border-color:var(--lime)}.social-icon svg{width:20px;height:20px;fill:currentColor}.contact-icons{display:flex;gap:10px;margin-top:14px}.contact-icons a{width:40px;height:40px;display:inline-flex;align-items:center;justify-content:center;border-radius:12px;background:rgba(16,24,39,.1);color:#17202d}.contact-icons svg{width:19px;height:19px;fill:currentColor}.social a.icon-link{display:inline-flex;align-items:center;gap:7px}
+
+
+/* Premium polish: accessible focus, elevated cards, responsive rhythm */
+:focus-visible{outline:3px solid #8d9cff;outline-offset:3px}
+::selection{background:#d7fb72;color:#101827}
+.navlinks a{transition:color .2s ease}
+.hero{box-shadow:0 24px 65px rgba(16,24,39,.13)}
+.hero-inner{min-height:610px}
+.availability{box-shadow:0 8px 25px rgba(215,251,114,.08)}
+.portrait-wrap{filter:drop-shadow(0 18px 30px rgba(0,0,0,.12))}
+.portrait{transition:transform .45s cubic-bezier(.2,.7,.2,1)}
+.portrait-wrap:hover .portrait{transform:scale(1.018)}
+.section{scroll-margin-top:84px}
+.edu-card,.learning-card,.value-card,.project,.stat{transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease}
+.edu-card:hover,.learning-card:hover,.value-card:hover,.stat:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#d4daf0}
+.edu-card .score{font-size:2rem;color:#5966d6}
+.edu-card .privacy-note{display:inline-flex;font-size:.76rem;font-weight:750;color:#66738a;background:#f3f5fa;border-radius:8px;padding:7px 10px}
+.project{position:relative;overflow:hidden}
+.project:before{content:"";position:absolute;left:0;top:0;width:100%;height:4px;background:linear-gradient(90deg,var(--lime),#9ce8e5,#b7a6ff);opacity:.9}
+.brand-mark{box-shadow:0 5px 14px rgba(16,24,39,.08);letter-spacing:.01em}
+.brand-mark.eab{background:#edf4ff;border-color:#d9e7fb}
+.social-icon,.contact-icons a{cursor:pointer;transition:transform .2s ease,background .2s ease,box-shadow .2s ease}
+.social-icon:hover,.contact-icons a:hover{transform:translateY(-4px);box-shadow:0 10px 24px rgba(0,0,0,.16)}
+.contact-icons a{background:#17263a;color:#fff;border:1px solid rgba(255,255,255,.16)}
+.contact-icons a:hover{background:#263b58}
+.contact{box-shadow:0 18px 45px rgba(16,24,39,.08)}
+.btn:focus-visible,.role-btn:focus-visible,.social-icon:focus-visible,.contact-icons a:focus-visible{outline:3px solid #7b88ff;outline-offset:4px}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+@media(max-width:850px){.hero-inner{min-height:unset}.hero{border-radius:0 0 26px 26px}}
+@media(max-width:620px){.hero-inner{padding:48px 0 55px}.portrait-caption{left:-12px}.social-icons{margin-top:20px}.contact-icons{justify-content:flex-start}.section-head{margin-bottom:25px}}
+
+
+/* Final visual refinement */
+:root{--lime:#d7fb72;--shadow:0 24px 70px rgba(16,24,39,.13)}
+body{letter-spacing:-.012em}
+.nav{height:78px}
+.navlinks a{position:relative;padding:8px 0}
+.navlinks a:after{content:"";position:absolute;left:0;bottom:1px;width:0;height:2px;background:#6d7ee8;transition:width .22s ease}
+.navlinks a:hover:after{width:100%}
+.hero{border-radius:0 0 42px 42px}
+.hero-inner{padding-top:88px;padding-bottom:92px;min-height:650px}
+h1{max-width:760px}
+.section{padding-top:88px;padding-bottom:88px;scroll-margin-top:90px}
+.section-head h2{letter-spacing:-.055em}
+.project{border:1px solid #e4e8f1;border-radius:22px;background:#fff;padding:26px;box-shadow:0 8px 28px rgba(24,35,55,.045);transition:transform .24s ease,box-shadow .24s ease,border-color .24s ease}
+.project:hover{transform:translateY(-6px);box-shadow:0 20px 48px rgba(24,35,55,.12);border-color:#cbd4e8}
+.project h3{letter-spacing:-.035em}
+.featured-project{background:linear-gradient(180deg,#fff 0%,#fbfcff 100%)}
+.featured-project .tag{background:#eff3ff;color:#4759bc}
+.project-disclaimer{margin:18px 0 0;padding:14px 17px;border-left:3px solid #d7fb72;background:#f4f7e9;border-radius:0 12px 12px 0;color:#596273;font-size:.86rem}
+.edu-card{border-radius:22px;box-shadow:0 8px 26px rgba(24,35,55,.045)}
+.skill-card,.value-card{border-radius:20px}
+.contact{border-radius:28px}
+.view-link{display:inline-flex;align-items:center;gap:6px;margin:7px 12px 0 0;font-weight:800;color:#5363c8}
+.view-link:hover{text-decoration:underline}
+@media(max-width:850px){.hero-inner{min-height:0;padding:66px 0 72px}.section{padding-top:66px;padding-bottom:66px}}
+@media(max-width:620px){.wrap{width:min(100% - 30px,1160px)}.hero{border-radius:0 0 28px 28px}.hero-inner{padding:52px 0 58px}.section{padding-top:54px;padding-bottom:54px}.project{padding:21px;border-radius:18px}.navlinks{gap:13px;overflow-x:auto;max-width:70vw;white-space:nowrap}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><a class="brand" href="#top">RAHUL<span style="color:#6875d8">.</span></a><nav class="navlinks"><a href="#top">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#projects">Simulations & projects</a><a href="#contact">Contact</a></nav></div></header>
+<main id="top">
+<section class="hero"><div class="wrap hero-inner">
+<div>
+<div class="availability"><i></i> Versatile IT fresher · Open to opportunities</div>
+<h1>Curious mind.<br><span>Ready to grow.</span></h1>
+<p class="hero-copy">I'm Rahul Raj, a B.Sc. Information Technology graduate with a foundation in programming, data analysis and digital tools. I am open to suitable entry-level opportunities across IT, analytics, software development, technical support and operations. I bring an IT foundation, a willingness to learn and the flexibility to contribute wherever my skills fit.</p>
+<div class="hero-meta"><span class="meta-chip">Entry-level opportunities</span><span class="meta-chip">Bengaluru, India</span><span class="meta-chip">B.Sc. IT · 2024</span><span class="meta-chip">English & Hindi</span></div>
+<div class="actions"><a class="btn primary" href="assets/Rahul_Raj_Resume.pdf" download>Download résumé ↗</a></div>
+<div class="social-icons" aria-label="Social and contact links">
+<a class="social-icon" href="https://www.linkedin.com/in/rahul-raj-259ab8448" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.53v16.94c0 .85.69 1.53 1.55 1.53h16.9c.86 0 1.55-.68 1.55-1.53V3.53C22 2.68 21.31 2 20.45 2ZM8.1 18.3H5.15V9.1H8.1v9.2ZM6.63 7.84a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42ZM18.85 18.3H15.9v-4.48c0-1.07-.02-2.45-1.49-2.45-1.49 0-1.72 1.16-1.72 2.37v4.56H9.74V9.1h2.83v1.26h.04c.39-.74 1.36-1.52 2.8-1.52 3 0 3.55 1.97 3.55 4.53v4.93Z"/></svg></a>
+<a class="social-icon" href="https://www.instagram.com/raj.r__03/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm0 2A3.8 3.8 0 0 0 4 7.8v8.4A3.8 3.8 0 0 0 7.8 20h8.4a3.8 3.8 0 0 0 3.8-3.8V7.8A3.8 3.8 0 0 0 16.2 4H7.8Zm4.2 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.2-3.5a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Z"/></svg></a>
+<a class="social-icon" href="mailto:rajrahul9021@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M3 4h18a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm9 8.2L3.5 6h17L12 12.2ZM3 8v10h18V8l-9 6.2L3 8Z"/></svg></a>
+</div>
+</div>
+<div class="portrait-wrap"><div class="portrait-glow"></div><img class="portrait" src="assets/Rahul_Raj_Profile.jpg" alt="Professional portrait of Rahul Raj"><div class="portrait-caption">Rahul Raj · Early-career professional</div></div>
+</div></section>
+
+<div class="wrap">
+<section id="about" class="section"><div class="section-head"><div><div class="eyebrow">01 / A little about me</div><h2>Technology foundation.<br>People-first mindset.</h2></div><p class="section-note">A flexible fresher profile built on IT education, practical simulations, analytical thinking and communication.</p></div>
+<div class="about-grid"><div><p class="about-copy">I completed my B.Sc. in Information Technology (Honours) with First Class with Distinction. My coursework and virtual job simulations gave me exposure to data analytics, cybersecurity fundamentals, AI-assisted proposal writing and web development. I enjoy learning new tools, working carefully and communicating clearly. I'm open to suitable entry-level opportunities where I can build experience and add value to a team.</p></div>
+<div class="stat-grid"><div class="stat"><strong>8.2/10</strong><span>Graduation CGPA</span></div><div class="stat"><strong>3</strong><span>Forage job simulations</span></div><div class="stat"><strong>20</strong><span>Relevant skills highlighted</span></div><div class="stat"><strong>2</strong><span>Languages · English & Hindi</span></div></div></div></section>
+
+<section id="skills" class="section"><div class="section-head"><div><div class="eyebrow">02 / Skill set</div><h2>Tools I know.<br>Strengths I bring.</h2></div><p class="section-note">Skills are grouped to make it easy for recruiters to scan. Technical skills are highlighted separately from professional strengths.</p></div>
+<div class="skill-panel">
+<div class="skill-group"><div class="skill-group-label">✦ Technical skills · 12</div><div class="skill-tags">
+<span class="featured">Python</span><span class="featured">Java</span><span class="featured">C++</span><span class="featured">SQL</span><span>Database Management Systems (DBMS)</span><span class="featured">Microsoft Excel</span><span class="featured">Data Analysis</span><span>Data Structures</span><span>Operating Systems</span><span class="featured">HTML and CSS</span><span>Generative AI Tools</span><span>Identity and Access Management (IAM)</span>
+</div></div>
+<div class="skill-group professional"><div class="skill-group-label">✦ Professional skills · 8</div><div class="skill-tags">
+<span>Problem Solving</span><span>Analytical Thinking</span><span>Attention to Detail</span><span>Time Management</span><span>Written Communication</span><span>Verbal Communication</span><span>Quick Learning</span><span>Self-Discipline</span>
+</div></div></div></section>
+
+
+<section id="roles" class="section"><div class="section-head"><div><div class="eyebrow">03 / Career interests</div><h2>Open to opportunities.<br>Ready to contribute.</h2></div><p class="section-note">Rahul is open to a range of suitable entry-level roles. Choose a role to see the skills that connect to it.</p></div>
+<div class="role-grid" role="group" aria-label="Target entry-level roles">
+<button class="role-btn active" data-role="data"><strong>Data Analyst</strong><small>Data & insights</small></button>
+<button class="role-btn" data-role="mis"><strong>MIS Executive</strong><small>Reporting & Excel</small></button>
+<button class="role-btn" data-role="python"><strong>Python Developer</strong><small>Programming</small></button>
+<button class="role-btn" data-role="software"><strong>Associate Software Engineer</strong><small>Software fundamentals</small></button>
+<button class="role-btn" data-role="support"><strong>Technical Support</strong><small>IT & user support</small></button>
+<button class="role-btn" data-role="qa"><strong>QA Engineer</strong><small>Testing & detail</small></button>
+<button class="role-btn" data-role="security"><strong>Junior Security Analyst</strong><small>Security fundamentals</small></button>
+<button class="role-btn" data-role="operations"><strong>Operations Associate</strong><small>Process & coordination</small></button>
+</div>
+<div class="role-output"><h3 id="role-title">Data Analyst · Relevant skills</h3><p id="role-description">A foundation in data handling, spreadsheets, databases and analytical thinking.</p>
+<div class="skill-tags" id="role-skills">
+<span data-skill="Microsoft Excel">Microsoft Excel</span><span data-skill="SQL">SQL</span><span data-skill="Data Analysis">Data Analysis</span><span data-skill="DBMS">DBMS</span><span data-skill="Analytical Thinking">Analytical Thinking</span><span data-skill="Attention to Detail">Attention to Detail</span><span data-skill="Problem Solving">Problem Solving</span>
+</div></div></section>
+
+<section id="projects" class="section"><div class="section-head"><div><div class="eyebrow">05 / Practical exposure</div><h2>Learning by doing.</h2></div><p class="section-note">Three Forage job simulations and completed portfolio projects demonstrating practical skills. These are learning experiences, not paid employment.</p><div class="forage-mark" aria-label="Forage platform"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19.8 3.5C11 3.2 5.1 6.3 4 12.1c-.7 3.7 1.6 6.6 5.1 6.6 5.2 0 9.7-6.2 10.7-15.2ZM5.8 20.7c2.8-5.2 6.4-8.9 11.1-12.1-3.4 3.4-6 7.1-7.8 12.1H5.8Z"/></svg> FORAGE · VIRTUAL JOB SIMULATIONS</div></div>
+<div class="projects">
+<article class="project"><div class="project-top"><div class="sim-meta"><span class="brand-mark" aria-label="Tata Group wordmark">TATA</span><span class="tag">Forage · Data analytics</span></div><b>01</b></div><h3>GenAI Powered Data Analytics Job Simulation</h3><p>Explored loan data, performed risk profiling, identified delinquency patterns and prepared a business report with a collections strategy.</p><div class="sim-detail"><b>Tasks:</b> Exploratory data analysis and risk profiling; predicting delinquency with AI; business reporting and data storytelling for collections strategy; implementing an AI-driven collections strategy.</div><div class="sim-detail"><b>Skills demonstrated:</b> Data analysis, risk profiling, analytical thinking and business reporting.</div><small>Completed October 9, 2026 · Forage</small><a class="view-link" href="assets/Forage_Tata_GenAI_Data_Analytics_Certificate.png" target="_blank" rel="noopener">View original certificate ↗</a></article>
+<article class="project"><div class="project-top"><div class="sim-meta"><span class="brand-mark" aria-label="Tata Group wordmark">TATA</span><span class="tag">Forage · Cybersecurity</span></div><b>02</b></div><h3>Cybersecurity Analyst Job Simulation</h3><p>Completed practical tasks focused on identity and access management and assessing IAM needs in a business context.</p><div class="sim-detail"><b>Tasks:</b> Identity and access management fundamentals; IAM strategy assessment; crafting custom IAM solutions; platform integration.</div><div class="sim-detail"><b>Skills demonstrated:</b> Identity and Access Management (IAM), access-risk awareness and cybersecurity fundamentals.</div><small>Completed October 8, 2026 · Forage</small><a class="view-link" href="assets/Forage_Tata_Cybersecurity_Certificate.png" target="_blank" rel="noopener">View original certificate ↗</a></article>
+<article class="project"><div class="project-top"><div class="sim-meta"><span class="brand-mark eab" aria-label="EAB wordmark">EAB</span><span class="tag">Forage · Generative AI</span></div><b>03</b></div><h3>GenAI for Proposal Generation Job Simulation</h3><p>Used generative AI in a proposal-drafting scenario and refined the proposal through continued discovery.</p><div class="sim-detail"><b>Tasks:</b> Pre-Visit Proposal Drafting — using GenAI to create a hypothesis proposal; Pursuit Management — refining the proposal through continued discovery.</div><div class="sim-detail"><b>Skills demonstrated:</b> Generative AI tools, written communication, analytical thinking and proposal development.</div><small>Completed October 8, 2026 · Forage</small><a class="view-link" href="assets/Forage_EAB_GenAI_Proposal_Certificate.png" target="_blank" rel="noopener">View original certificate ↗</a></article>
+<article class="project"><div class="project-top"><span class="tag">Academic · Web development</span><b>04</b></div><h3>Personal Portfolio Website</h3><p>Built a responsive portfolio website using HTML and CSS, with navigation, profile information and a login page.</p><div class="sim-detail"><b>Skills demonstrated:</b> HTML, CSS, page structure and responsive layout fundamentals.</div><small>Academic project</small></article>
+<article class="project featured-project"><div class="project-top"><span class="tag">Completed portfolio project · Excel / MIS</span><b>05</b></div><h3>Retail Sales MIS Dashboard</h3><p>Created an Excel-based sales dashboard using a practice dataset to summarize revenue, profit, units sold and regional performance.</p><div class="sim-detail"><b>Work included:</b> Structured sales data, calculated revenue and profit, summarized regional KPIs and added a revenue comparison chart.</div><div class="sim-detail"><b>Skills demonstrated:</b> Microsoft Excel, data cleaning, KPI reporting, analytical thinking and dashboard design.</div><small>Completed portfolio project · Synthetic practice dataset</small><a class="view-link" href="assets/projects/retail_sales_mis_dashboard.xlsx" download>Download Excel dashboard ↗</a><a class="view-link" href="assets/projects/retail_sales_sample.csv" download>Download sample dataset ↗</a></article>
+<article class="project featured-project"><div class="project-top"><span class="tag">Completed portfolio project · Python</span><b>06</b></div><h3>Retail Sales Data Analysis with Python</h3><p>Analyzed a practice retail dataset with pandas to calculate business KPIs, compare regional performance and review monthly trends.</p><div class="sim-detail"><b>Work included:</b> Data loading, calculated metrics, grouped summaries and monthly performance analysis.</div><div class="sim-detail"><b>Skills demonstrated:</b> Python, pandas, data analysis, aggregation and reporting.</div><small>Completed portfolio project · Synthetic practice dataset</small><a class="view-link" href="assets/projects/retail_sales_analysis.py" download>Download Python script ↗</a><a class="view-link" href="assets/projects/retail_sales_sample.csv" download>Download sample dataset ↗</a></article>
+<article class="project featured-project"><div class="project-top"><span class="tag">Completed portfolio project · SQL</span><b>07</b></div><h3>Retail Sales SQL Business Queries</h3><p>Prepared SQL queries to answer common business questions about revenue, profit, product performance and monthly sales trends.</p><div class="sim-detail"><b>Work included:</b> Aggregate calculations, GROUP BY, ORDER BY, NULLIF and date-based grouping.</div><div class="sim-detail"><b>Skills demonstrated:</b> SQL, querying, business analysis and data interpretation.</div><small>Completed portfolio project · Synthetic practice dataset</small><a class="view-link" href="assets/projects/retail_sales_analysis.sql" download>Download SQL queries ↗</a><a class="view-link" href="assets/projects/retail_sales_sample.csv" download>Download sample dataset ↗</a></article>
+</div>
+<p class="project-disclaimer">Project datasets are synthetic and created for portfolio practice. Rahul should review the files, run the analyses and be prepared to explain the approach during interviews.</p>
+</section>
+
+<section class="section"><div class="section-head"><div><div class="eyebrow">Project portfolio</div><h2>More practical work is next.</h2></div><p class="section-note">The academic portfolio website is currently the project showcased here. Additional projects will be added when completed and supported by working demos or repositories.</p></div><div class="learning"><article class="learning-card"><h3>Next project to publish: Excel / MIS dashboard</h3><p>A practical reporting project with a sample dataset, formulas, pivot tables and a clear business summary. Not yet presented as completed work.</p></article><article class="learning-card"><h3>Next project to publish: Python automation</h3><p>A small Python project with source code, example input/output and a short explanation. Not yet presented as completed work.</p></article><article class="learning-card"><h3>Next project to publish: SQL analysis</h3><p>A database querying project with business questions, SQL queries and documented findings. Not yet presented as completed work.</p></article><article class="learning-card"><h3>GitHub</h3><p>GitHub project links can be added once Rahul shares a profile or repositories. No account or repository has been invented.</p></article></div></section>
+
+<section class="section"><div class="section-head"><div><div class="eyebrow">05 / What I bring</div><h2>A strong foundation.<br>A learning mindset.</h2></div><p class="section-note">An early-career candidate focused on learning, contributing and growing through practical work.</p></div>
+<div class="value-grid">
+<article class="value-card"><div class="symbol">✦</div><h3>IT foundation</h3><p>B.Sc. Information Technology (Honours), with exposure to programming, databases, operating systems and web fundamentals.</p></article>
+<article class="value-card"><div class="symbol">◎</div><h3>Analytical approach</h3><p>Interested in understanding information, identifying patterns and approaching tasks with care and structured thinking.</p></article>
+<article class="value-card"><div class="symbol">↗</div><h3>Adaptable learner</h3><p>Open to different entry-level opportunities and motivated to learn the tools and processes required by a team.</p></article>
+</div></section>
+
+<section id="education" class="section"><div class="section-head"><div><div class="eyebrow">04 / Education</div><h2>Academic journey.</h2></div><p class="section-note">A concise academic overview. Original marksheets can be shared privately during recruitment.</p></div>
+<div class="education-main"><div><div class="eyebrow" style="color:var(--lime)">2021 — 2024 · Undergraduate</div><h3 style="font-size:1.4rem;margin:8px 0 0">B.Sc. Information Technology (Honours)</h3><p>Dr. Shyama Prasad Mukherjee University, Ranchi<br>First Class with Distinction · 77.44% Honours percentage · 72.85% overall</p></div><div class="cgpa">8.2 <span style="font-size:1rem;color:#c4cedd">/ 10 CGPA</span></div></div>
+<div class="education-cards">
+<article class="edu-card"><div class="year">2019 · CBSE Class X</div><h3>Secondary School</h3><div class="score">90.8%</div><p>454 / 500 marks · Passed</p><span class="privacy-note">Original document available privately on request</span></article>
+<article class="edu-card"><div class="year">2021 · CBSE Class XII</div><h3>Senior Secondary</h3><div class="score">78.2%</div><p>391 / 500 marks · Passed</p><span class="privacy-note">Original document available privately on request</span></article>
+<article class="edu-card"><div class="year">2024 · University</div><h3>B.Sc. IT (Honours)</h3><div class="score">8.2 CGPA</div><p>1,894 / 2,600 overall · First Class with Distinction</p><span class="privacy-note">Original document available privately on request</span></article>
+</div>
+
+<div style="margin-top:28px"><div class="eyebrow">Academic progression</div><h3 style="font-size:1.3rem;letter-spacing:-.04em;margin:7px 0 14px">Semester-wise SGPA</h3>
+<div class="semester-chart" role="img" aria-label="Semester SGPA: semester 1 7.00, semester 2 7.70, semester 3 8.54, semester 4 8.15, semester 5 8.17, semester 6 9.33">
+<div class="semester"><div class="bar" style="--h:70%" data-score="7.00"></div><span>Sem 1</span></div>
+<div class="semester"><div class="bar" style="--h:77%" data-score="7.70"></div><span>Sem 2</span></div>
+<div class="semester"><div class="bar" style="--h:85.4%" data-score="8.54"></div><span>Sem 3</span></div>
+<div class="semester"><div class="bar" style="--h:81.5%" data-score="8.15"></div><span>Sem 4</span></div>
+<div class="semester"><div class="bar" style="--h:81.7%" data-score="8.17"></div><span>Sem 5</span></div>
+<div class="semester"><div class="bar" style="--h:93.3%" data-score="9.33"></div><span>Sem 6</span></div>
+</div><p class="chart-note">Semester SGPAs transcribed from the graduation record provided. Scale shown from 0 to 10.</p></div>
+
+<div class="learning"><article class="learning-card"><h3>Microsoft Excel — Coursera</h3><p>Course learning completed in spreadsheet skills and data handling. No certificate claimed.</p></article><article class="learning-card"><h3>Languages</h3><p>English and Hindi — fluent in written and spoken communication.</p></article></div>
+</section>
+
+<section id="contact" class="section" style="border:0"><div class="contact"><div><div class="eyebrow" style="color:#46572c">05 / Get in touch</div><h2>Let's make the next step count.</h2><p>Interested in entry-level roles where I can support a team, solve practical problems and continue building my skills.</p></div><div class="actions" style="margin:0;flex-direction:column;align-items:stretch"><a class="btn primary" href="mailto:rajrahul9021@gmail.com">Send an email ↗</a><a class="btn secondary" href="tel:+918873963201">Call Rahul ↗</a><div class="contact-icons"><a href="mailto:rajrahul9021@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M3 4h18a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm9 8.2L3.5 6h17L12 12.2ZM3 8v10h18V8l-9 6.2L3 8Z"/></svg></a><a href="https://www.linkedin.com/in/rahul-raj-259ab8448" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.53v16.94c0 .85.69 1.53 1.55 1.53h16.9c.86 0 1.55-.68 1.55-1.53V3.53C22 2.68 21.31 2 20.45 2ZM8.1 18.3H5.15V9.1H8.1v9.2ZM6.63 7.84a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42ZM18.85 18.3H15.9v-4.48c0-1.07-.02-2.45-1.49-2.45-1.49 0-1.72 1.16-1.72 2.37v4.56H9.74V9.1h2.83v1.26h.04c.39-.74 1.36-1.52 2.8-1.52 3 0 3.55 1.97 3.55 4.53v4.93Z"/></svg></a><a href="https://www.instagram.com/raj.r__03/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm0 2A3.8 3.8 0 0 0 4 7.8v8.4A3.8 3.8 0 0 0 7.8 20h8.4a3.8 3.8 0 0 0 3.8-3.8V7.8A3.8 3.8 0 0 0 16.2 4H7.8Zm4.2 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.2-3.5a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Z"/></svg></a></div></div></div></section>
+</div></main>
+<footer class="wrap"><span>© <span id="year"></span> Rahul Raj · Personal portfolio</span><div class="social"><a href="#top">Back to top ↑</a></div></footer>
+
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+const roleData={
+data:{title:"Data Analyst · Relevant skills",description:"A foundation in data handling, spreadsheets, databases and analytical thinking.",skills:["Microsoft Excel","SQL","Data Analysis","DBMS","Analytical Thinking","Attention to Detail","Problem Solving"]},
+mis:{title:"MIS Executive · Relevant skills",description:"Spreadsheet confidence, reporting accuracy and organised communication.",skills:["Microsoft Excel","Data Analysis","SQL","DBMS","Attention to Detail","Time Management","Analytical Thinking","Written Communication"]},
+python:{title:"Python Developer · Relevant skills",description:"Programming fundamentals and problem-solving skills relevant to an entry-level development path.",skills:["Python","Data Structures","SQL","DBMS","Problem Solving","Analytical Thinking","Operating Systems"]},
+software:{title:"Associate Software Engineer · Relevant skills",description:"Core programming, web fundamentals and structured problem solving.",skills:["Python","Java","C++","Data Structures","SQL","DBMS","HTML and CSS","Operating Systems","Problem Solving"]},
+support:{title:"Technical Support · Relevant skills",description:"IT fundamentals, careful troubleshooting and clear user communication.",skills:["Operating Systems","DBMS","Identity and Access Management (IAM)","Problem Solving","Written Communication","Verbal Communication","Quick Learning","Attention to Detail"]},
+qa:{title:"QA Engineer · Relevant skills",description:"Attention to detail, analytical thinking and technical foundations that support learning software testing.",skills:["Python","Java","SQL","DBMS","Analytical Thinking","Attention to Detail","Problem Solving","Time Management"]},
+security:{title:"Junior Security Analyst · Relevant skills",description:"An introductory foundation in IAM and operating systems, supported by analytical thinking.",skills:["Identity and Access Management (IAM)","Operating Systems","DBMS","SQL","Analytical Thinking","Attention to Detail","Problem Solving"]},
+operations:{title:"Operations Associate · Relevant skills",description:"Spreadsheet and data-handling skills combined with communication, organisation and attention to detail.",skills:["Microsoft Excel","Data Analysis","Attention to Detail","Time Management","Written Communication","Verbal Communication","Problem Solving","Self-Discipline","Quick Learning"]}
+};
+const buttons=[...document.querySelectorAll(".role-btn")];
+const title=document.getElementById("role-title"),desc=document.getElementById("role-description");
+const tags=[...document.querySelectorAll("#role-skills span")];
+buttons.forEach(button=>button.addEventListener("click",()=>{
+ const item=roleData[button.dataset.role];
+ buttons.forEach(b=>b.classList.toggle("active",b===button));
+ title.textContent=item.title;desc.textContent=item.description;
+ tags.forEach(tag=>tag.classList.toggle("dimmed",!item.skills.includes(tag.dataset.skill)));
+}));
+</script>
+
+</body></html>
